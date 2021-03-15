@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<style>
 		body {
-			background: url("img/fondo.jpg") #004024;	
+			background: url("img/fondo2.jpg") black;	
 		}
 	</style>
 	<title>Portafolio - Nola01</title>
@@ -17,8 +17,10 @@
 <body>
 	
 	<div class="contenedor">
+		<!-- Header de la página, barra de búsqueda y categorías -->
 		<header>
 			<div class="logo">
+				<img src="https://gitlab.iesvirgendelcarmen.com/uploads/-/system/user/avatar/152/avatar.png?width=400" alt="HTML tutorial" style="max-width:100%; width:auto; height:auto; border-radius: 10px; ">
 				<h1>Nola01</h1>
 				Desarrollador Freelance
 			</div>
@@ -30,37 +32,46 @@
 				<a href="#">Base de datos</a>
 				<a href="#">Programación</a>
 				<a href="#">Desarrollo Web</a>
-				<a href="#">Acerca de</a>
+				<a href="#">Sobre mi</a>
 			</div>
 		</header>
 
+		<!-- Creamos una sección para que todo esté centrado en la página -->
+
 		<section class="grid" id="grid">
-			<!--Base de datos-->
+			<!-- Bases de datos -->
+			<!-- Aquí escribimos lo que se mostrará sobre base de datos en el menú inicio
+				Usamos el atributo data- para indicar a qué categoría pertenece este div>
+			-->
 			<div class="item" 
 				 data-categoria="inicio"
 				 data-etiquetas=""
-				 data-descripcion=""
+				 data-descripcion="Base de datos"
 			>
 			<div class="item-contenido">
-				<p>
-					Bases de datos	
-				</p>
+				<h1>Bases de datos</h1>
+				<br>
 				<a href="#base de datos">
-					<img src="img/Bases_de_datos_de_particulares.jpg" alt="HTML tutorial" style="width:400px;height:300px; border-radius: 10px;">
+					<img class="contenedor" src="img/Bases_de_datos_de_particulares.jpg" alt="basededatos1" style="max-width:100%; width:auto; height:auto; border-radius: 10px;">
 					</a>
-				<p>
-					Para más información vaya al menú "base de datos"		
-				</p>
+				<br>
+				Para más información vaya al menú "base de datos"		
 			</div>
 			</div>
 
+			<!-- Aquí escribimos lo que se mostrará sobre base de datos en el menú base de datos
+				Usamos el atributo data- para indicar a qué categoría pertenece este div (data-categoria),
+				 y para vincular unas etiquetas especificas (data-etiquetas) para poder encontrar este div a través
+				 de la barra de búsqueda >
+			-->
 			<div
+				
 				 data-categoria="base de datos"
 				 data-etiquetas="base bases de datos sql SQL oracle ORACLE mysql MYSQL"
 				 data-descripcion=""
 			>
 				<div class="titulo">
-					<h1>¿Qué sé sobre bases de datos?</h1>
+					<h1>Bases de datos</h1>
 				</div>
 				<div>
 					<h1>SQL</h1>
@@ -117,25 +128,30 @@
 			</div>
 
 			<!--Programación-->
-
+			<!-- Aquí escribimos lo que se mostrará sobre programación en el menú inicio
+				Usamos el atributo data- para indicar a qué categoría pertenece este div>
+			-->
 			<div class="item" 
 				 data-categoria="inicio"
 				 data-etiquetas=""
-				 data-descripcion=""
+				 data-descripcion="Java"
 			>
 			<div class="item-contenido">
-				<p>
-					Programación	
-				</p>
+				<h1>Programación</h1>
+				<br>
 				<a href="#programación">
-					<img src="img/Java-Debugging-Tips-881x441.jpg" alt="HTML tutorial" style="width:400px;height:300px; border-radius: 10px;">
+					<img src="img/Java-Debugging-Tips-881x441.jpg" alt="programacion" style="max-width:100%; width:auto; height:auto; border-radius: 10px; ">
 					</a>
-				<p>
-					Para más información vaya al menú "Programación"		
-				</p>
+				<br>
+				Para más información vaya al menú "Programación"		
 			</div>
 			</div>
-
+			
+			<!-- Aquí escribimos lo que se mostrará sobre base de datos en el menú programación
+				Usamos el atributo data- para indicar a qué categoría pertenece este div (data-categoria),
+				 y para vincular unas etiquetas especificas (data-etiquetas) para poder encontrar este div a través
+				 de la barra de búsqueda >
+			-->
 			<div
 				 data-categoria="programación"
 				 data-etiquetas="bash BASH java JAVA powershell POWERSHELL pyton PYTON javascript JAVASCRIPT c C react REACT angular ANGULAR android ANDROID NODE node JS js
@@ -175,25 +191,30 @@
 			</div>
 			
 			<!--Desarrollo Web-->
-
+			<!-- Aquí escribimos lo que se mostrará sobre desarrollo web en el menú inicio
+				Usamos el atributo data- para indicar a qué categoría pertenece este div>
+			-->
 			<div class="item" 
 				 data-categoria="inicio"
 				 data-etiquetas=""
-				 data-descripcion=""
+				 data-descripcion="HTML5 y CSS3"
 			>
 				<div class="item-contenido">
-					<p>
-						Desarrollo Web	
-					</p>
+					<h1>Desarrollo Web</h1>
+					<br>
 					<a href="#desarrollo web">
-						<img src="img/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML tutorial" style="width:400px;height:300px; border-radius: 10px;">
+						<img src="img/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="desarrollo web" style="max-width:100%; width:auto; height:auto; border-radius: 10px; ">
 						</a>
-					<p>
-						Para más información vaya al menú "Desarrollo Web"		
-					</p>
+					<br>
+					Para más información vaya al menú "Desarrollo Web"		
 				</div>
 			</div>
 
+			<!-- Aquí escribimos lo que se mostrará sobre base de datos en el menú desarrollo web
+				Usamos el atributo data- para indicar a qué categoría pertenece este div (data-categoria),
+				 y para vincular unas etiquetas especificas (data-etiquetas) para poder encontrar este div a través
+				 de la barra de búsqueda >
+			-->
 			<div
 				 data-categoria="desarrollo web"
 				 data-etiquetas="html HTML 5 JavaScript javascript JAVASCRIPT vanilla VANILLA CSS3 css3 webapps WEBAPPS"
@@ -203,41 +224,90 @@
 					<h1>Desarrollo Web</h1>
 				</div>
 				<div>
-					<ol type="1">
-                        <li>HTML5</li>
-            			<li>JavaScript Vanilla</li>
-            			<li>CSS3</li>
-            			<li>WebApps</li>
-                    </ol> 
+					<h1>HTML5</h1>
+					HTML5 es un estándar que sirve como referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, 
+					define una estructura básica y un código (denominado HTML) para la definición de contenido de una página web, como texto, imágenes, vídeos, 
+					juegos, entre otros…
+				</div>
+
+				<br>
+
+				<div>
+					<h1>JavaScript Vanilla</h1>
+					Vanilla JavaScript es como se conoce al lenguaje JavaScript cuando se utiliza sin ninguna librería o framework.
+				</div>
+
+				<br>
+
+				<div>
+					<h1>CSS3</h1>
+					CSS significa Cascade Style Sheets, también llamado Hojas de Estilo en Cascada. CSS es un lenguaje de marcado que se emplea para dar 
+					formato a un sitio web. Es decir, funciona en conjunto con los archivos HTML.
+				</div>
+
+				<br>
+
+				<div>
+					<h1>WebApps</h1>
+					El concepto de WebApp se define por ser una versión de la página web adaptada y optimizada para cualquier dispositivo móvil, sin una previa instalación 
+					y la posibilidad de abrirla desde cualquier navegador sin importar el sistema operativo que estés utilizando.
 				</div>
 			</div>
 
-			<!--Contacto-->
-
-			<div
-				 data-categoria="acerca de"
-				 data-etiquetas="contacto CONTACTO autor AUTOR acerca de ACERCA DE"
+			<!--Sobre mi-->
+			<!-- Aquí escribimos lo que se mostrará sobre desarrollo web en el menú sobre mi
+				Usamos el atributo data- para indicar a qué categoría pertenece este div>
+			-->
+			<div class="item"
+				 data-categoria="inicio"
+				 data-etiquetas=""
 				 data-descripcion=""
 			>
+				<div class="item-contenido">
+					<h1>Sobre mi</h1>
+					<br>
+					<a href="#sobre_mi">
+						<img src="https://gitlab.iesvirgendelcarmen.com/uploads/-/system/user/avatar/152/avatar.png?width=400" alt="foto_perfil" style="max-width:100%; width:auto; height:auto; border-radius: 10px; ">
+						</a>
+					<br>
+					Para más información vaya al menú "Sobre mi"	
+				</div>
+			</div>
+			<!-- Aquí escribimos lo que se mostrará sobre base de datos en el menú sobre mi
+				Usamos el atributo data- para indicar a qué categoría pertenece este div (data-categoria),
+				 y para vincular unas etiquetas especificas (data-etiquetas) para poder encontrar este div a través
+				 de la barra de búsqueda >
+			-->
+			<div
+				 data-categoria="sobre mi"
+				 data-etiquetas="contacto CONTACTO autor AUTOR acerca de ACERCA DE sobre mi SOBRE MI"
+				 data-descripcion="Mi foto de perfil"
+			>
+				<div class="titulo">
+					<h1>Sobre mi</h1>
+				</div>
 				<div>
 					¡Hola! Soy Nola, desarrollador multiplataforma, actualmente freelancer. Especializado en programación en Java, desarrollo web con HTML5, CSS y JS, y 
 					gestión de bases de datos. Si quieres contactar conmigo, puedes hacerlo a través de mis redes sociales (puedes acceder a ellas haciendo click en los 
 					iconos que hay más abajo).
+					<br>
+					También puedes enviarme un email a la dirección: nolasco9850@gmail.com
 				</div>
 			</div>
+				
+					
 			
             
 		</section>
 
-		<section class="overlay" id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-			</div>
-			<p class="descripcion"></p>
-		</section>
-
 		<footer class="contenedor">
+			<!-- En el footer añadimos el enlace a la página de donde obtuve el fondo de la página web.
+				También añadimos los iconos de las redes sociales, pero con un mensaje de alerta porque ahora mismo
+				no tengo redes sociales
+			 -->
+			<div>
+			<a href='https://www.freepik.es/vectores/fondo'>Imagen de fondo</a>
+			</div>	
 			<div class="redes-sociales">
 				<div class="contenedor-icono">
 					<a onclick="alert('(Estamos trabajando en ello... 🛠️💻)');" href="#" target="_blank" class="twitter">
