@@ -1,3 +1,4 @@
+// Inicializo Muuri (página web de diseños)
 const grid = new Muuri('.grid', {
 	layout: {
 		rounding: false
@@ -26,10 +27,5 @@ window.addEventListener('load', () => {
 		const busqueda = evento.target.value;
 		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
 	});
-
-	//Eventlistener del overlay
-	overlay.addEventListener('click', (evento) => {
-		evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
-	})
 
 });
