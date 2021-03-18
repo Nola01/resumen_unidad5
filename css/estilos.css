@@ -109,7 +109,7 @@ header .categorias a.activo {
 	transition: opacity 0.5s linear 1s;
 }
 
-.grid.imagenes-cargadas {
+.grid.elementos-cargados {
 	opacity: 1;
 }
 
