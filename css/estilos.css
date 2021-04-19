@@ -11,6 +11,7 @@ body {
 	opacity: 0.8;		
 	background-attachment: fixed;
 	background-size: 100%;
+	font-size: larger;
 }
 
 div {
@@ -26,10 +27,13 @@ a {
 
 h2 {
 	margin-left: 50px;
+	font-style: italic;
+
 }
 
 p{
 	margin-left: 50px;
+	margin-right: 50px;
 	text-align: justify;
 }
 
